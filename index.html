@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrab/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz</title>
+
+   
+</head>
+<body >
+
+  <section id="setting" class="mt-5 setting">
+
+    <div class="container position-relative ">
+      <h2 class="text-center h2 my-5">Setting Your Quiz</h2>
+
+
+      <div>
+        <label class="fw-bold mt-5  " for="">Category</label>
+        <select class="form-control" name="category" id="category">
+          <option  value="9">Category Knowledge</option>
+          <option value="27">Animals</option>
+          <option value="15">Video Games</option>
+          <option value="23">History</option>
+          <option value="21">Sports</option>
+          <option value="18">Scince Computers</option>
+        </select>
+      </div>
+
+
+<div>
+  <label  for="">Difficulty</label>
+</div>
+<div>
+  <div>
+  <input class="mt-1" type="radio" name="difficulty" checked value="easy"> Easy
+  </div>
+  <div>
+    <input class="mt-1" type="radio" name="difficulty" value="medium"> Medium
+    </div>
+    <div class="mb-1">
+      <input class="mt-1" type="radio" name="difficulty" value="hard"> Hard
+      </div>
+
+</div>
+ 
+<input id="numOfQuet" type="number" placeholder="Number Of Questions" class="form-control">
+<span id="alert" class="text-danger d-none">please enter number of questions</span>
+<button class="btn btn-primary mt-4 px-3 position-absolute pos">Start</button>
+    </div>
+
+  </section>
+
+
+  <section id="quiz" class="quiz my-5 ">
+    <div class="container my-5 position-relative">
+      <h2 class="h2 text-center ">Quiz</h2>
+
+<span class="position-absolute pos text-white pos1 px-3">
+  <span id="current">5</span>
+  <span>of</span>
+  <span id="all">7</span>
+  questions
+</span>
+
+<div>
+  <span id="correct" class="bg-success ">correct</span>
+  <span id="incorrect" class="bg-danger ">incorrect</span>
+</div>
+<div class="mt-5" >
+  <h1 id="q" class="h2"></h1>
+
+</div>
+
+<div id="answers" class="h2">
+
+</div>
+
+
+<div>
+  <span id="choose" class="text-danger">please choose your answer</span>
+</div>
+
+<button class="btn btn-primary mt-4 px-3 position-absolute pos">Submit</button>
+
+    </div>
+
+
+  </section>
+
+
+  <section id="score" class="score mt-5 ">
+    <div class="container position-relative">
+      <h2 class="h2 text-center">Finish</h2>
+      <div class="mt-5 h2 text-center">score <br>
+      <span id="score1">0</span>
+
+      </div>
+    <button class="btn btn-primary px-3 mt-4 pos position-absolute">Try Again?</button>
+
+    </div>
+
+
+  </section>
+ 
+  <script src="js/jquery-3.7.1.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>

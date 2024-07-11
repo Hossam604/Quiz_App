@@ -1,0 +1,59 @@
+body{
+  background-color: rgb(184, 115, 248);
+}
+.container{
+  width: 75% !important;
+  height: 500px !important;
+  background-color: white !important;
+  margin:auto
+}
+.h2{
+  color: blueviolet;
+  /* top: 60px !important;
+  left: 38% !important; */
+}
+
+.pos{
+  right: 25px !important;
+  border-radius: 10px !important;
+}
+.pos1{
+  background-color:blueviolet
+}
+
+.score,.quiz{
+  display: none;
+}
+
+#correct,#incorrect,#choose{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 85% !important;
+    height: 500px !important;
+    margin:auto
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container{
+    width: 90% !important;
+    height:500px !important;
+    margin:auto
+  }
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+  .container{
+    width: 95% !important;
+    height:500px !important;
+    margin:auto
+  }
+}
+
